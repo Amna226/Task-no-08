@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: bisque;
+        }
+        .container{
+            border: 5px;
+            display: flex;
+            gap: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        .container1{
+            display: flex;
+            border: 5px solid wheat;
+        }
+        .container2{
+            border: 5px solid wheat;
+            display: flex;
+        }
+        .date{
+            color: blueviolet;
+        }
+        .container1
+        .date {
+            color: purple;
+        }
+        @media screen and (max-width: 760px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width: 450px) {
+            .container1{
+                flex-direction: column;
+            }
+            .container2{
+                flex-direction: column;
+            }
+
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+        <div class="card">
+        <h1>Card One</h1>
+        <div class="date">
+        <p>May 28,2025</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae nostrum repudiandae numquam! Rerum, praesentium facere pariatur doloremque deleniti accusantium unde obcaecati! Quas ullam, asperiores vero sapiente voluptates praesentium perferendis?</p>
+        </div>
+        </div>
+        <div class="container1">
+            <div class="card">
+            <h1>Card Two</h1>
+            <div class="date">
+            <p>May 28,2025</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae nostrum repudiandae numquam! Rerum, praesentium facere pariatur doloremque deleniti accusantium unde obcaecati! Quas ullam, asperiores vero sapiente voluptates praesentium perferendis?</p>
+            </div>
+            </div>
+        <div class="container2">
+        <div class="card">
+        <h1>Card Three</h1>
+        <div class="date">
+        <p>May 28,2025</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae nostrum repudiandae numquam! Rerum, praesentium facere pariatur doloremque deleniti accusantium unde obcaecati! Quas ullam, asperiores vero sapiente voluptates praesentium perferendis?</p>
+        </div>
+        </div>
+        <div class="container2">
+            <div class="card">
+            <h1>Card Four</h1>
+            <div class="date">
+            <p>May 28,2025</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae nostrum repudiandae numquam! Rerum, praesentium facere pariatur doloremque deleniti accusantium unde obcaecati! Quas ullam, asperiores vero sapiente voluptates praesentium perferendis?</p>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
